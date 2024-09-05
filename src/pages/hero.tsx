@@ -3,11 +3,11 @@ import Navbar from "./navbar";
 
 export default function Hero() {
   return (
-    <div className="font-raleway">
+    <div className="h-screen font-raleway">
       <Navbar />
-      <div className="h-screen flex flex-col justify-center items-center text-center">
+      <div className="flex flex-col justify-center items-center text-center pt-7">
         <div className="">
-          <h1 className="text-9xl font-bold text-gray-100">Hello!</h1>
+          <h1 className="text-9xl font-bold text-gray-100" style={{fontSize: '200px'}}>Hello!</h1>
         </div>
         <div className="text-center -mt-2">
           <p className="text-9xl font-extrabold">

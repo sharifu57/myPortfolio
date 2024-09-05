@@ -14,6 +14,10 @@ module.exports = {
     //   '5xl': '3.052rem',
     //   '9xl': '8.052rem',
     // }
+    container: {
+      center: true,
+      padding: '4rem',
+    }
   },
   plugins: [],
 }
