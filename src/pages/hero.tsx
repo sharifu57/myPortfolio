@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "./navbar";
 import { motion } from "framer-motion";
+import Footer from "./footer";
 
 export default function Hero() {
   return (
-    <div className="h-screen font-raleway">
+    <div className="flex flex-col min-h-screen font-raleway">
       <Navbar />
-      <div className="flex flex-col justify-center items-center text-center pt-7">
+      <div className="flex flex-col justify-center items-center text-center flex-grow pt-7">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -41,6 +42,7 @@ export default function Hero() {
           </article>
         </motion.div>
       </div>
+      <Footer />
     </div>
   );
 }
