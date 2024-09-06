@@ -3,6 +3,7 @@ import * as React from "react";
 import Index from "../pages";
 import About from "../pages/about";
 import Portfolio from "../pages/portfolio";
+import Contact from "../pages/contact";
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -15,6 +16,10 @@ export const router = createBrowserRouter([
     {
         path: '/portfolio',
         element: <Portfolio/>
+    },
+    {
+        path: '/contact',
+        element: <Contact/>
     },
     {
         path: '*',
