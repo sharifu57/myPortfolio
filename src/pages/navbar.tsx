@@ -16,7 +16,7 @@ export default function Navbar() {
     },
     {
         label: "Portfolio",
-        link: "/porfolio",
+        link: "/Portfolio",
     },
     {
         label: "Contact",
