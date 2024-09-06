@@ -8,32 +8,38 @@ export default function Portfolio() {
     {
       id: 1,
       title: "Web Example",
-      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg"
+      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      link: "https://flowbite.s3.amazonaws.com/"
     },
     {
       id: 2,
       title: "Web Example",
-      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
+      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+      link: "https://flowbite.s3.amazonaws.com/"
     },
     {
       id: 3,
       title: "Web Example",
-      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg"
+      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+      link: "https://flowbite.s3.amazonaws.com/"
     },
     {
       id: 4,
       title: "Web Example",
-      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
+      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+      link: "https://flowbite.s3.amazonaws.com/"
     },
     {
       id: 5,
       title: "Web Example",
-      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg"
+      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+      link: "https://flowbite.s3.amazonaws.com/"
     },
     {
       id: 6,
       title: "Web Example",
-      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg"
+      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+      link: "https://flowbite.s3.amazonaws.com/"
     },
     {
       id: 7,
@@ -129,13 +135,18 @@ export default function Portfolio() {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {imageList.map((imageObj) => (
-          <div key={imageObj.id}>
+          <a href={imageObj?.link} target="_blank">
+            <div key={imageObj.id} className="group relative overflow-hidden rounded-lg">
             <img
-              className="h-auto max-w-full rounded-lg"
+              className="h-auto max-w-full rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110"
               src={imageObj.image}
-              alt=""
+              alt={imageObj.title}
             />
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+              <h3 className="text-white text-xl font-bold">{imageObj.title}</h3>
+            </div>
           </div>
+          </a>
         ))}
       </div>
 
