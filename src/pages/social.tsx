@@ -4,7 +4,7 @@ export default function Social() {
   return (
     <div>
       <div className="bg-white w-full h-auto py-8 flex items-center justify-center gap-4 flex-wrap">
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/sharifu57" target="_blank" rel="noopener noreferrer">
           <button className="w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-500">
             <svg
               className="fill-gray-900 relative z-10 transition-all duration-500 group-hover:fill-white"
@@ -88,7 +88,7 @@ export default function Social() {
           </button>
         </a>
 
-        <a href="http://" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/sharifu_majid" target="_blank" rel="noopener noreferrer">
           <button className="w-10 h-10 flex items-center justify-center rounded-full relative overflow-hidden bg-white shadow-md shadow-gray-200 group transition-all duration-300">
             <svg
               className="fill-black z-10 transition-all duration-300 group-hover:fill-white"
