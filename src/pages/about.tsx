@@ -100,7 +100,7 @@ export default function About() {
           </p>
 
           <div className="flex flex-col md:flex-row items-start pt-7 gap-0 md:gap-20">
-            <div className="w-1/2 md:w-1/2 mb-6 md:mb-0">
+            <div className="w-full md:w-1/2 mb-6 md:mb-0">
               {skills.map((skill, index) => (
                 <div key={skill.name} className="mb-7">
                   <div className="flex justify-between">
@@ -123,9 +123,9 @@ export default function About() {
                 </div>
               ))}
             </div>
-            <div className="w-1/2 md:w-1/2 mb-6 md:mb-0">
+            <div className="w-full md:w-1/2 mb-6 md:mb-0">
               <div className="flex flex-col md:flex-row items-start pt-7">
-                <div className="w-1/2 md:w-1/2 mb-6 md:mb-0">
+                <div className="w-full md:w-1/2 mb-6 md:mb-0">
                   <div>
                     <h1 className="mb-2 text-6xl font-bold tracking-tight text-gray-900">
                       5+
@@ -135,7 +135,7 @@ export default function About() {
                     </p>
                   </div>
                 </div>
-                <div className="w-1/2 md:w-1/2 mb-6 md:mb-0">
+                <div className="w-full md:w-1/2 mb-6 md:mb-0">
                   <div>
                     <h1 className="mb-2 text-6xl font-bold tracking-tight text-gray-900">
                       22+

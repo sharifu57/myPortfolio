@@ -36,8 +36,8 @@ export default function Navbar() {
             <img src="/S.svg" className="h-10" alt="Flowbite Logo" />
           </a>
           <div className="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-          <Space>
-          <Switch
+            <Space>
+              <Switch
                 checkedChildren="🌛"
                 unCheckedChildren="🔆"
                 checked={mode === 'dark'}

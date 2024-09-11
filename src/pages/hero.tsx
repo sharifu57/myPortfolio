@@ -15,7 +15,7 @@ export default function Hero() {
           transition={{ duration: 2 }}
         >
           <h1
-            className="text-9xl font-bold text-gray-100"
+            className="text-9xl sm:text-9xl md:text-9xl lg:text-9xl font-bold text-gray-100"
             style={{ fontSize: "200px" }}
           >
             Hello!
@@ -27,7 +27,7 @@ export default function Hero() {
           transition={{ duration: 2, delay: 0.5 }}
           className="text-center -mt-14"
         >
-          <p className="text-9xl font-extrabold">
+          <p className="text-8xl sm:text-9xl md:text-9xl lg:text-9xl font-extrabold">
             I am <br />
             Sharifu
           </p>
@@ -36,7 +36,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 1 }}
-          className="mt-5"
+          className="mt-10 md:mt-6 lg:mt-6 sm:mt-6"
         >
           <article className="text-wrap ...">
             <p className="text-1xl">
@@ -55,7 +55,7 @@ export default function Hero() {
             Available for Freelance
           </span>
         </div> */}
-        <div>
+        <div className="">
           <Social/>
         </div>
       </div>

@@ -8,7 +8,8 @@ export default function Portfolio() {
     {
       id: 1,
       title: "Web Example",
-      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+      // image: "jamii.png",
+      image: "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
       link: "https://flowbite.s3.amazonaws.com/"
     },
     {
@@ -141,6 +142,7 @@ export default function Portfolio() {
               className="h-auto max-w-full rounded-lg transition-transform duration-500 ease-in-out transform group-hover:scale-110"
               src={imageObj.image}
               alt={imageObj.title}
+              // style={{height: '200px', width: '300px'}}
             />
             <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
               <h3 className="text-white text-xl font-bold">{imageObj.title}</h3>
